@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Affordable and professional web design">
+  <meta name="keywords" content="web design, affordable web design, professional web design">
+  <meta name="author" content="Brad Traversy">
+  <title>Acme Web Deisgn | About</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Soul</span> by the Pound</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="gold-shadow" href="index.html">Home</a></li>
+          <li class="current"><a class="white-shadow" href="about.html">About</a></li>
+          <li><a class="gold-shadow" href="services.html">Services</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section id="main">
+    <div class="container">
+      <article id="main-col">
+        <h1 class="titles-shadow">About Us</h1>
+        <p class="lights">
+          Soul by the Pound is the brainchild of culinary aficionado Chef Jacqui. After many years spent learning and
+          perfecting her craft, Miss Jacqui has decided to use her expertise for a new personal endevor. To bring her
+          culinary dishes and flavor to the public.
+        </p>
+        <p class="dark">
+          "I believe food should look as good as it taste. I use the finest ingredients, herbs and spices to pull off my
+          artistic creations. I put a new spin on the old classics, as well as creating my own original dishes. Each and
+          every recipe is served with love and care....... So come and get some!".
+          -Miss Jacqui
+        </p>
+      </article>
+
+      <aside id="sidebar">
+        <div class="dark">
+          <h3>What We Do</h3>
+          <p>We provide high quality culinary dishes to our customers in the form of individual orders or catering
+            orders</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <div id="fog">
+    <div id="slideshow">
+      <div>
+        <img src="./img/slide1.jpg">
+      </div>
+      <div>
+        <img src="./img/slide9.jpg">
+      </div>
+      <div>
+        <img src="./img/slide3.jpg">
+      </div>
+      <div>
+        <img src="./img/slide4.jpg">
+      </div>
+      <div>
+        <img src="./img/slide5.jpg">
+      </div>
+      <div>
+        <img src="./img/sample6.JPG">
+      </div>
+      <div>
+        <img src="./img/sample8.jpg">
+      </div>
+      <div>
+        <img src="./img/slide12.jpg">
+      </div>
+      <div>
+        <img src="./img/slide7.jpg">
+      </div>
+      <div>
+        <img src="./img/slide8.jpg">
+      </div>
+      <div>
+        <img src="./img/slide2.jpg">
+      </div>
+      <div>
+        <img src="./img/slide10.jpg">
+      </div>
+      <div>
+        <img src="./img/slide11.jpg">
+      </div>
+      <div>
+        <img src="./img/slide6.jpg">
+      </div>
+      <div>
+        <img src="./img/slide13.PNG">
+      </div>
+      <div>
+        <img src="./img/slide14.PNG">
+      </div>
+      <div>
+        <img src="./img/slide15.PNG">
+      </div>
+      <div>
+        <img src="./img/slide16.jpg">
+      </div>
+      <div>
+        <img src="./img/slide18.jpg">
+      </div>
+      <div>
+        <img src="./img/slide19.jpg">
+      </div>
+      <div>
+        <img src="./img/slide20.jpg">
+      </div>
+      <div>
+        <img src="./img/slide21.jpg">
+      </div>
+      <div>
+        <img src="./img/slide22.jpg">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Soul by the Pound, Copyright &copy; 2020</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+
+
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function () {
+      $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+    }, 4000);
+
+  </script>
+</body>
+
+</html>
