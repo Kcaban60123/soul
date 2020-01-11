@@ -1,0 +1,16 @@
+{
+  "name": "BythePound",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://Kcaban60123.github.io/soul",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
